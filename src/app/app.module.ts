@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { BocaComponent } from './boca/boca.component';
 import { RiverComponent } from './river/river.component';
 import { BackgroundComponent } from './background/background.component';
+import { ArgentinaComponent } from './argentina/argentina.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BocaComponent,
     RiverComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    ArgentinaComponent
   ],
   imports: [
     BrowserModule

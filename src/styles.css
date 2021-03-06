@@ -4,7 +4,7 @@ body {
     font-family: 'Lora';
     /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/fondo_home.jpg");*/
     background: linear-gradient(rgba(120, 158, 128, 0.65), rgba(120, 158, 128, 0.65)), url("/assets/images/pelota.jpg"); 
-  
+    
     background-attachment: fixed;
     background-position: center; 
     background-size: cover;
@@ -44,6 +44,9 @@ body {
     background-color:rgb(37, 151, 8);
     box-shadow:0 1px 1px #ccc;
     border-radius:2px;
+    position: static;
+    border: 3px solid #73AD21;
+    bottom: -10em;
    }
    
    nav a{
@@ -75,5 +78,11 @@ body {
    nav.internacional .internacional,
    nav.contacto .contacto{
     background-color:#6658e3;
+   }
+
+   .logo{
+    position: fixed;
+    top: 0;
+    left: 0;
    }
 
