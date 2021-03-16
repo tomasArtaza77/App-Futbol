@@ -4,31 +4,33 @@
   <head>
     <meta charset="utf-8">
     <title>AppDeporte</title>
-    <base href="/">
+    <base href="/"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head> 
   
   <body style="background-color:#a8f3d6;">
       
-      
       <!-- Styles -->
       <link rel="stylesheet" href="styles.css">
     <!--    <img src="assets/images/Logo2.png" alt="" style="width:800px;height:200px;"> -->
      
         <div id="main" ng-app>
-          <img class="logo" src="assets/images/logo.png" alt="" style="width:400px;height:175px;">
           
           <nav class="{{active}}" ng-click="$event.preventDefault()" ng-init="active='inicio'">
+            <img class="logo" src="assets/images/logo.png" alt="" style="width:400px;height:175px;">
             <a href="Inicio" class="inicio" ng-click="active='inicio'" >Inicio</a> 
-            <a href="./argentina.component.ts" class="argentina" ng-click="active='argentina'">Argentina</a>
+            <a href="./argentina/argentina.component'" class="argentina" ng-click="active='argentina'">Argentina</a>
             <a href="Internacional" class="internacional" ng-click="active='internacional'">Internacional</a>
             <a href="Contacto" class="contacto" ng-click="active='contacto'">Contacto</a>
           </nav>
+
+          <iframe src="https://www.scorebat.com/embed/" frameborder="0" width="300" height="760" allowfullscreen allow='autoplay; fullscreen' style="width:600px;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
           
         </div>
         
         <app-root></app-root> <!-- Inicializo la app -->
+
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   </body> 
 
